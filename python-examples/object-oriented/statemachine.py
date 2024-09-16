@@ -39,18 +39,21 @@ def main():
     while True:
         if (currentIntake.getIntakeContent() == "empty"):
             currentIntake.setIntakeStatus("down")
+            
             if (currentIntake.getIntakeStatus() == "down"):
                 currentIntake.runIntake()
+
             else:
                 currentIntake.setIntakeStatus("down")
+
         else:
             currentIntake.setIntakeStatus("up")
+            
             if (currentIntake.getIntakeStatus() == "up"):
                 currentIntake.runEject()
+
             else:
                 currentIntake.setIntakeStatus("up")
-                
-            
 
-
+        time.sleep(1)
 main()
