@@ -9,26 +9,28 @@ class robotIntake:
         self.intakeContent = full
 
     def getIntakeStatus(self):
-        print(self.intakeStatus)
-        time.sleep(5)
+        print("Current intake status to: " + self.intakeStatus)
+        time.sleep(1)
         return self.intakeStatus
 
     def getIntakeContent(self):
-        time.sleep(5)
-        print(self.intakeContent)
+        time.sleep(1)
+        print("Current intake content to: " + self.intakeContent)
         return self.intakeContent
 
     def setIntakeStatus(self, status):
+        print("Setting intake status to: " + status)
         self.intakeStatus = status
 
     def setIntakeContent(self, full):
+        print("Setting intake content to: " + full)
         self.intakeContent = full
     
     def runIntake(self):
-        self.intakeContent = True
+        self.intakeContent = "full"
     
     def runEject(self):
-        self.intakeContent = False
+        self.intakeContent = "empty"
     
 
 
