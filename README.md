@@ -8,5 +8,10 @@ Lastly, you need to install python on your MacBook. This can be done by opening 
 ```
 xcode-select --install
 ```
+You can now run python files on your MacBook, by running 
+```
+python3 python-file.py
+```
+Pro Tip: VSCode also has a built-in terminal so you don't have to switch windows too much. You can open this by pressing the control key, the shift key, and the ~ key at the same time.
 
 Finally, clone this repository through GitHub desktop and create a branch with your name. I will go over this at our meetings if you need help.
