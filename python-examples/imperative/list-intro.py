@@ -16,7 +16,7 @@ def subtract(num1, num2):
 
 
 # Main loop
-while 7 == 7:
+while True:
     # Generate the Values
     num1 = input('input a random number:')
     num2 = input('input a second random number:')
