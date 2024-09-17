@@ -1,6 +1,3 @@
-# Imports
-import random
-
 # Create List(s)
 liste = []
 
