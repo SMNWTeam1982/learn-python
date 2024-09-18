@@ -1,5 +1,5 @@
 # Team1982 Learn to Code
-This repository is for new programmers at SMNW Team 1982 Robotics, it has a few examples in different styles to teach principals for programmers new to robotics and python too.
+This repository is for new programmers at SMNW Team 1982 Robotics, it has a few examples in different styles to teach principles for programmers new to robotics and python too.
 
 # Setup
 To start with this project, you should have Visual Studio Code installed, which is available in Manager.

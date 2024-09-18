@@ -3,6 +3,20 @@ liste = []
 
 
 # Functions
+def generate():
+    # Generate the values
+    num1 = input('input a random number:')
+    if num1 != int:
+        print("Please try again")
+
+    # Convert the values
+    num1 = int(num1)
+
+    # Add them to the list
+    liste.append(num1)
+
+    return num1
+
 def add(num1, num2):
     # Add the two variables
     num3 = num1 + num2
@@ -10,40 +24,35 @@ def add(num1, num2):
     print("Your added total is", num3)
 
 def subtract(num1, num2):
-    num3 = num2 - num1
+    num3 = num1 - num2
     num3 = str(num3)
     print("Your subtracted total is", num3)
 
+def multiply(num1, num2):
+    num3 = (num1 * num2)
+    num3 = str(num3)
+    print("Your multiplied total is", num3)
+
+def divide(num1, num2):
+    num3 = (num1 / num2)
+    num3 = str(num3)
+    print("Your divided total is", num3)
 
 # Main loop
 while True:  # Same as while 7 == 7:
     act = input("What to do now?")
-    if act == "add":
-            # Generate the Values
-        num1 = input('input a random number:')
-        num2 = input('input a second random number:')
-
-        # Convert the Values
-        num1 = int(num1)
-        num2 = int(num2)
-
-        # Add them to the list
-        liste.append(num1)
-        liste.append(num2)
-        add(num1, num2)
+    if act == "add": #call the function to add the numbers, and then call the function to generate them as inputs.
+        add(generate(), generate())
+        # This method saves space and looks overall cleaner, though there is a different method you can do this.
     elif act == "subtract":
-            # Generate the Values
-        num1 = input('input a random number:')
-        num2 = input('input a second random number:')
-
-        # Convert the Values
-        num1 = int(num1)
-        num2 = int(num2)
-
-        # Add them to the list
-        liste.append(num1)
-        liste.append(num2)
-        subtract(num1, num2)
+        num5 = generate()
+        num4 = generate()
+        subtract(num5, num4)
+        # Such as this method, which throws the output of the generate function into a couple of variables instead.
+    elif act == "multiply":
+        multiply(generate(), generate())
+    elif act == "divide":
+        divide(generate(), generate())
     elif act == "list":
         print(liste)
     elif act == "clear":
