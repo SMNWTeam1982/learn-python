@@ -17,21 +17,32 @@ def subtract(num1, num2):
 
 # Main loop
 while True:  # Same as while 7 == 7:
-    # Generate the Values
-    num1 = input('input a random number:')
-    num2 = input('input a second random number:')
-
-    # Convert the Values
-    num1 = int(num1)
-    num2 = int(num2)
-
-    # Add them to the list
-    liste.append(num1)
-    liste.append(num2)
     act = input("What to do now?")
     if act == "add":
+            # Generate the Values
+        num1 = input('input a random number:')
+        num2 = input('input a second random number:')
+
+        # Convert the Values
+        num1 = int(num1)
+        num2 = int(num2)
+
+        # Add them to the list
+        liste.append(num1)
+        liste.append(num2)
         add(num1, num2)
     elif act == "subtract":
+            # Generate the Values
+        num1 = input('input a random number:')
+        num2 = input('input a second random number:')
+
+        # Convert the Values
+        num1 = int(num1)
+        num2 = int(num2)
+
+        # Add them to the list
+        liste.append(num1)
+        liste.append(num2)
         subtract(num1, num2)
     elif act == "list":
         print(liste)
