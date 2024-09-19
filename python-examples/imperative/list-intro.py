@@ -6,8 +6,6 @@ liste = []
 def generate():
     # Generate the values
     num1 = input('input a random number:')
-    if num1 != int:
-        print("Please try again")
 
     # Convert the values
     num1 = int(num1)
